@@ -1,0 +1,13 @@
+This folder contains codes to replicate the SSW9 paper titled
+
+"Contextual Representation using Recurrent Neural Network Hidden State for Statistical Parametric Speech Synthesis"
+
+SPSS using three architectures are presented in the paper and the codes for these three architectures are in the following directories repsectively.
+(1) DNN
+(2) RNN
+(3) RNN-DNN 
+
+
+
+
+

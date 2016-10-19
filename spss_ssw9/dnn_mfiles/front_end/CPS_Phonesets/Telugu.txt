@@ -1,0 +1,124 @@
+C01	:	SYM	@
+C02	q	SYM	@
+C03	hq	VOW	@
+C05	a	SCHWA	
+C06	aa	VOW
+C07	i	VOW
+C08	ii	VOW
+C09	u	VOW
+C0A	uu	VOW
+C0B	rq	VOW
+C0C	lx	VOW	***
+C0D	NULL	SYM
+C0E	e	VOW
+C0F	ee	VOW
+C10	ai	VOW
+C11	NULL	SYM
+C12	o	VOW
+C13	oo	VOW
+C14	au	VOW
+C15	k	CON
+C16	kh	CON
+C17	g	CON
+C18	gh	CON
+C19	ng	CON
+C1A	c	CON
+C1B	ch	CON
+C1C	j	CON
+C1D	jh	CON
+C1E	nj	CON
+C1F	tx	CON
+C20	txh	CON
+C21	dx	CON
+C22	dxh	CON
+C23	nx	CON
+C24	t	CON
+C25	th	CON
+C26	d	CON
+C27	dh	CON
+C28	n	CON
+C29	NULL	SYM
+C2A	p	CON
+C2B	ph	CON
+C2C	b	CON
+C2D	bh	CON
+C2E	m	CON
+C2F	y	CON
+C30	r	CON
+C31	rx	CON
+C32	l	CON
+C33	lx	CON
+C34	NULL	SYM
+C35	w	CON
+C36	sh	CON
+C37	sx	CON
+C38	s	CON
+C39	h	CON
+C3E	aa	VOW	***
+C3F	i	VOW	***
+C40	ii	VOW	***
+C41	u	VOW	***
+C42	uu	VOW	***
+C43	rq	VOW	***
+C44	rrq	VOW	***
+C45	NULL	SYM
+C46	e	VOW	***
+C47	ee	VOW	***
+C48	ai	VOW	***
+C49	NULL	SYM
+C4A	o	VOW	***
+C4B	oo	VOW	***
+C4C	au	VOW	***
+C4D	HAL	HLT
+C4E	NULL	SYM
+C4F	NULL	SYM
+C50	NULL	SYM
+C51	NULL	SYM
+C52	NULL	SYM
+C53	NULL	SYM
+C54	NULL	SYM
+C60	rrq	VOW	***
+C61	lxx	VOW	***
+C62     hq      SYM	***
+21      !       PUNC	***
+22      "       PUNC	***
+23      #       PUNC	***
+24      $       PUNC	***
+25      %       PUNC	***
+26      &       PUNC	***
+27      '       PUNC	***
+28      (       PUNC	***
+29      )       PUNC	***
+2A      *       PUNC	***
+2B      +       PUNC	***
+2C      ,       PUNC	***
+2D      -       PUNC	***
+2E      .       PUNC	***
+2F      /       PUNC	***
+3A      :       PUNC	***
+3B      ;       PUNC	***
+3C      <       PUNC	***
+3D      =       PUNC	***
+3E      >       PUNC	***
+3F      ?       PUNC	***
+40      @       PUNC	***
+5B      [       PUNC	***
+5C      \       PUNC	***
+5D      ]       PUNC	***
+5E      ^       PUNC	***
+5F      _       PUNC	***
+60      `       PUNC	***
+7B      {       PUNC	***
+7C      |       PUNC	***
+7D      }       PUNC	***
+7E      ~       PUNC	***
+30      0       DIGIT	***
+31      1       DIGIT	***
+32      2       DIGIT	***
+33      3       DIGIT	***
+34      4       DIGIT	***
+35      5       DIGIT	***
+36      6       DIGIT	***
+37      7       DIGIT	***
+38      8       DIGIT	***
+39      9       DIGIT	***

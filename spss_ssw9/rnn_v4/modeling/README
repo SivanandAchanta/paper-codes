@@ -1,0 +1,106 @@
+This readme describes the whole process of building an SPSS system using RNN code 
+
+Input features : Binary contextual features with only right context, numerical features like POS and finally durational features (all of these are obtained from HTS full context labels as will be explained below)
+
+Output features : Mel-generalized cepstrum (60(static) + 60(delta) + 60(doubledelta)) + band-aperiodicity (52 + 52 + 52) + f0 + vuv (total 338 dimensions)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Start of Feature Extraction Step %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Step 1 : Feature Extraction Step ...
+
+Step 1_A : Text feature extraction
+Extract text features using HTS tool full context label files
+
+call_tfeatext.m    -- This script calls the text feature extraction module
+txtfe_hts_v5.m     -- This script maps categorical features in the full context label files to numerical features 
+
+
+Instructions : Store the full data feats in a temp dir and split the data into train/val/test. 
+
+(1) Store the train data in tfeats/train
+(2) Store the val data in tfeats/val
+(3) Store the test data in tfeats/test
+
+You can use the provided splittraindata.m and splittestdata.m to do the split or any other way you wish to 
+
+Step 1_B : Audio feature extraction 
+Extract audio features using HTS tool (use the STRAIGHT demo version to extract spectrum,aperiodicity and f0 (sp,ap,f0))
+
+call_tfeatext.m -- This script calls the text feature extraction module
+txt_fe_v5.m     -- This script maps categorical features in the full context label files to numerical features 
+
+Instructions : Store the full data feats in a temp dir and split the data into train/val/test. 
+
+(1) Store the train data in tfeats/train
+(2) Store the val data in tfeats/val
+(3) Store the test data in tfeats/test
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% End of Feature Extraction Step %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+Expected Outcome of Step 1: At the end of step 1, we expect to have the folder structure as depicted in example_kit,
+
+train/afeats/
+val/afeats/
+test/afeats/
+
+train/tfeats/
+val/tfeats/
+test/tfeats/
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Start of data packing for modelling %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Step 2 : Make 3 mat files for input to RNN (train.mat, val.mat and test.mat)
+
+maketraindata.m -- use this script to make train.mat
+maketestdata.m  -- use this script to make val.mat and test.mat
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% End of data packing for modelling %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+Expected Outcome of Step 2: At the end of step 2, we expect to have the three mat files in the data folder,
+
+data/train.mat
+data/val.mat
+data/test.mat
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

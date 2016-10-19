@@ -1,0 +1,436 @@
+Warning: No window system found.  Java option 'MWT' ignored
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> >> >> >> 
+numepochs =
+
+    10
+
+>> 
+gpu_flag =
+
+     1
+
+>> 
+sgd_type =
+
+sgdcm
+
+>> 
+arch_name1 =
+
+500R
+
+>> 
+ol_type =
+
+L
+
+>> 
+cfn =
+
+ls
+
+>> 
+wtinit_meth =
+
+di
+
+>> 
+check_valfreq =
+
+        1000
+
+>> 
+model_name =
+
+rnn
+
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> 
+i =
+
+     1
+
+
+i =
+
+     2
+
+
+i =
+
+     3
+
+
+i =
+
+     4
+
+
+i =
+
+     5
+
+
+i =
+
+     6
+
+Normalizing input feats ...
+Normalizing output feats ...
+Size of the training dataset 2873679 
+size of train i/o data
+
+Nin =
+
+     2873679
+
+
+din =
+
+   247
+
+
+Nout =
+
+     2873679
+
+
+dout =
+
+   150
+
+Number of Train, Validation and Test Batches ...
+
+train_numbats =
+
+        2355
+
+
+val_numbats =
+
+    62
+
+
+test_numbats =
+
+    62
+
+>> >> >> {Warning: Directory already exists.} 
+>> {Warning: Directory already exists.} 
+>> >> >> >> >> 
+nwt =
+
+   123
+
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> size of weight matrices
+
+ans =
+
+   500   247
+
+
+ans =
+
+   500     1
+
+
+ans =
+
+   500   500
+
+
+ans =
+
+   150   500
+
+
+ans =
+
+   150     1
+
+
+arch_name =
+
+247L500R150L_rnn_di_l20_lr0.001_mf0.3_gc1_si0.01_ri0.01_so0.1_123
+
+Epoch : 1 Update: 0 maxGradLen : 1.000000 0.601250 0.555210 
+Epoch : 1 Update: 1 maxGradLen : 1.000000 0.300245 0.305983 
+Epoch : 1 Update: 2 maxGradLen : 1.000000 0.412102 0.456378 
+Epoch : 1 Update: 3 maxGradLen : 1.000000 0.257122 0.303073 
+Epoch : 1 Update: 4 maxGradLen : 1.000000 0.491770 0.475537 
+Epoch : 1 Update: 5 maxGradLen : 1.000000 0.371678 0.443301 
+Epoch : 1 Update: 6 maxGradLen : 1.000000 0.343799 0.346777 
+Epoch : 1 Update: 7 maxGradLen : 1.000000 0.452547 0.340860 
+Epoch : 1 Update: 8 maxGradLen : 1.000000 0.379651 0.507439 
+Epoch : 1 Update: 9 maxGradLen : 1.000000 0.399217 0.376882 
+Epoch : 1 Update: 10 maxGradLen : 1.000000 0.286547 0.335210 
+Epoch : 1 Update: 11 maxGradLen : 1.000000 0.355091 0.484910 
+Epoch : 1 Update: 12 maxGradLen : 1.000000 0.286452 0.443676 
+Epoch : 1 Update: 13 maxGradLen : 1.000000 0.253559 0.317497 
+Epoch : 1 Update: 14 maxGradLen : 1.000000 0.236812 0.349570 
+Epoch : 1 Update: 15 maxGradLen : 1.000000 0.214038 0.222080 
+Epoch : 1 Update: 16 maxGradLen : 1.000000 0.180449 0.289466 
+Epoch : 1 Update: 17 maxGradLen : 1.000000 0.278668 0.275206 
+Epoch : 1 Update: 18 maxGradLen : 1.000000 0.589912 0.529337 
+Epoch : 1 Update: 19 maxGradLen : 1.000000 0.294974 0.379750 
+Epoch : 1 Update: 20 maxGradLen : 1.000000 0.187719 0.297914 
+Epoch : 1 Update: 21 maxGradLen : 1.000000 0.230668 0.331055 
+Epoch : 1 Update: 22 maxGradLen : 1.000000 1.000000 0.924519 
+Epoch : 1 Update: 23 maxGradLen : 1.000000 0.222595 0.316342 
+Epoch : 1 Update: 24 maxGradLen : 1.000000 0.177396 0.227796 
+Epoch : 1 Update: 25 maxGradLen : 1.000000 0.177211 0.283573 
+Epoch : 1 Update: 26 maxGradLen : 1.000000 0.318350 0.405105 
+Epoch : 1 Update: 27 maxGradLen : 1.000000 0.217467 0.220056 
+Epoch : 1 Update: 28 maxGradLen : 1.000000 0.196701 0.309747 
+Epoch : 1 Update: 29 maxGradLen : 1.000000 0.415896 0.516805 
+Epoch : 1 Update: 30 maxGradLen : 1.000000 0.262367 0.382517 
+Epoch : 1 Update: 31 maxGradLen : 1.000000 0.344823 0.467172 
+Epoch : 1 Update: 32 maxGradLen : 0.740619 0.120553 0.239844 
+Epoch : 1 Update: 33 maxGradLen : 1.000000 0.364708 0.532107 
+Epoch : 1 Update: 34 maxGradLen : 1.000000 0.280233 0.238528 
+Epoch : 1 Update: 35 maxGradLen : 1.000000 0.705089 0.618860 
+Epoch : 1 Update: 36 maxGradLen : 1.000000 0.263672 0.369460 
+Epoch : 1 Update: 37 maxGradLen : 1.000000 0.174460 0.283425 
+Epoch : 1 Update: 38 maxGradLen : 1.000000 0.535423 0.439834 
+Epoch : 1 Update: 39 maxGradLen : 1.000000 0.303810 0.290282 
+Epoch : 1 Update: 40 maxGradLen : 0.920731 0.145693 0.222256 
+Epoch : 1 Update: 41 maxGradLen : 1.000000 0.302845 0.370618 
+Epoch : 1 Update: 42 maxGradLen : 1.000000 0.177068 0.250002 
+Epoch : 1 Update: 43 maxGradLen : 1.000000 0.228298 0.326027 
+Epoch : 1 Update: 44 maxGradLen : 1.000000 0.330098 0.531935 
+Epoch : 1 Update: 45 maxGradLen : 1.000000 0.196918 0.297180 
+Epoch : 1 Update: 46 maxGradLen : 0.959470 0.168022 0.273404 
+Epoch : 1 Update: 47 maxGradLen : 1.000000 0.235067 0.332295 
+Epoch : 1 Update: 48 maxGradLen : 1.000000 0.219371 0.338708 
+Epoch : 1 Update: 49 maxGradLen : 1.000000 0.289167 0.490391 
+Epoch : 1 Update: 50 maxGradLen : 1.000000 0.676652 0.666165 
+Epoch : 1 Update: 51 maxGradLen : 1.000000 0.210175 0.267696 
+Epoch : 1 Update: 52 maxGradLen : 1.000000 0.342408 0.460817 
+Epoch : 1 Update: 53 maxGradLen : 1.000000 0.153620 0.240422 
+Epoch : 1 Update: 54 maxGradLen : 1.000000 0.171466 0.326162 
+Epoch : 1 Update: 55 maxGradLen : 1.000000 0.304884 0.478597 
+Epoch : 1 Update: 56 maxGradLen : 1.000000 0.168126 0.232174 
+Epoch : 1 Update: 57 maxGradLen : 1.000000 0.267190 0.372664 
+Epoch : 1 Update: 58 maxGradLen : 1.000000 0.372556 0.496810 
+Epoch : 1 Update: 59 maxGradLen : 1.000000 0.234524 0.309410 
+Epoch : 1 Update: 60 maxGradLen : 1.000000 0.209222 0.288350 
+Epoch : 1 Update: 61 maxGradLen : 1.000000 0.211563 0.308117 
+Epoch : 1 Update: 62 maxGradLen : 1.000000 0.270236 0.306005 
+Epoch : 1 Update: 63 maxGradLen : 0.784193 0.135027 0.277271 
+Epoch : 1 Update: 64 maxGradLen : 1.000000 0.183287 0.233644 
+Epoch : 1 Update: 65 maxGradLen : 1.000000 0.306481 0.355519 
+Epoch : 1 Update: 66 maxGradLen : 0.881872 0.177468 0.278985 
+Epoch : 1 Update: 67 maxGradLen : 1.000000 0.268310 0.505953 
+Epoch : 1 Update: 68 maxGradLen : 1.000000 0.304579 0.406464 
+Epoch : 1 Update: 69 maxGradLen : 1.000000 0.160723 0.283504 
+Epoch : 1 Update: 70 maxGradLen : 1.000000 0.221293 0.329443 
+Epoch : 1 Update: 71 maxGradLen : 0.890927 0.151621 0.231051 
+Epoch : 1 Update: 72 maxGradLen : 1.000000 0.227655 0.407009 
+Epoch : 1 Update: 73 maxGradLen : 1.000000 0.235346 0.298086 
+Epoch : 1 Update: 74 maxGradLen : 1.000000 0.307318 0.364204 
+Epoch : 1 Update: 75 maxGradLen : 1.000000 0.230629 0.341177 
+Epoch : 1 Update: 76 maxGradLen : 1.000000 0.315686 0.439162 
+Epoch : 1 Update: 77 maxGradLen : 1.000000 0.264295 0.321791 
+Epoch : 1 Update: 78 maxGradLen : 1.000000 0.234540 0.353611 
+Epoch : 1 Update: 79 maxGradLen : 1.000000 0.241965 0.322923 
+Epoch : 1 Update: 80 maxGradLen : 1.000000 0.392991 0.452634 
+Epoch : 1 Update: 81 maxGradLen : 1.000000 0.362450 0.568377 
+Epoch : 1 Update: 82 maxGradLen : 1.000000 0.312601 0.446379 
+Epoch : 1 Update: 83 maxGradLen : 1.000000 0.208116 0.224614 
+Epoch : 1 Update: 84 maxGradLen : 1.000000 0.320437 0.465835 
+Epoch : 1 Update: 85 maxGradLen : 1.000000 0.246802 0.329997 
+Epoch : 1 Update: 86 maxGradLen : 1.000000 0.201245 0.285307 
+Epoch : 1 Update: 87 maxGradLen : 1.000000 0.217003 0.338544 
+Epoch : 1 Update: 88 maxGradLen : 1.000000 0.236394 0.288797 
+Epoch : 1 Update: 89 maxGradLen : 1.000000 0.152949 0.371611 
+Epoch : 1 Update: 90 maxGradLen : 1.000000 0.296346 0.367237 
+Epoch : 1 Update: 91 maxGradLen : 1.000000 0.238022 0.375720 
+Epoch : 1 Update: 92 maxGradLen : 1.000000 0.292898 0.393662 
+Epoch : 1 Update: 93 maxGradLen : 1.000000 0.735162 1.000000 
+Epoch : 1 Update: 94 maxGradLen : 1.000000 0.257285 0.357027 
+Epoch : 1 Update: 95 maxGradLen : 1.000000 0.213477 0.287745 
+Epoch : 1 Update: 96 maxGradLen : 0.983702 0.159846 0.224923 
+Epoch : 1 Update: 97 maxGradLen : 1.000000 0.457833 0.745363 
+Epoch : 1 Update: 98 maxGradLen : 0.855033 0.161818 0.367226 
+Epoch : 1 Update: 99 maxGradLen : 1.000000 0.201957 0.389835 
+Epoch : 1 Update: 100 maxGradLen : 1.000000 0.345269 0.460498 
+Epoch : 1 Update: 101 maxGradLen : 1.000000 0.263788 0.298641 
+Epoch : 1 Update: 102 maxGradLen : 1.000000 0.178565 0.271970 
+Epoch : 1 Update: 103 maxGradLen : 0.809266 0.150611 0.234799 
+Epoch : 1 Update: 104 maxGradLen : 1.000000 0.395853 0.617676 
+Epoch : 1 Update: 105 maxGradLen : 1.000000 0.212234 0.267741 
+Epoch : 1 Update: 106 maxGradLen : 1.000000 0.331245 0.322971 
+Epoch : 1 Update: 107 maxGradLen : 1.000000 0.182978 0.382724 
+Epoch : 1 Update: 108 maxGradLen : 1.000000 0.222116 0.257343 
+Epoch : 1 Update: 109 maxGradLen : 1.000000 0.221534 0.338894 
+Epoch : 1 Update: 110 maxGradLen : 1.000000 0.207235 0.264900 
+Epoch : 1 Update: 111 maxGradLen : 1.000000 0.284597 0.405375 
+Epoch : 1 Update: 112 maxGradLen : 1.000000 0.159768 0.345600 
+Epoch : 1 Update: 113 maxGradLen : 0.741611 0.136211 0.219162 
+Epoch : 1 Update: 114 maxGradLen : 1.000000 0.304194 0.322781 
+Epoch : 1 Update: 115 maxGradLen : 1.000000 0.275100 0.495973 
+Epoch : 1 Update: 116 maxGradLen : 1.000000 0.327868 0.537265 
+Epoch : 1 Update: 117 maxGradLen : 1.000000 0.404041 0.679556 
+Epoch : 1 Update: 118 maxGradLen : 1.000000 0.274302 0.344134 
+Epoch : 1 Update: 119 maxGradLen : 1.000000 0.235809 0.328881 
+Epoch : 1 Update: 120 maxGradLen : 1.000000 0.323715 0.467860 
+Epoch : 1 Update: 121 maxGradLen : 1.000000 0.665109 0.560277 
+Epoch : 1 Update: 122 maxGradLen : 1.000000 0.170885 0.360199 
+Epoch : 1 Update: 123 maxGradLen : 0.947719 0.166433 0.236716 
+Epoch : 1 Update: 124 maxGradLen : 1.000000 0.193046 0.258064 
+Epoch : 1 Update: 125 maxGradLen : 1.000000 0.186481 0.315578 
+Epoch : 1 Update: 126 maxGradLen : 1.000000 0.329521 0.476433 
+Epoch : 1 Update: 127 maxGradLen : 1.000000 0.220826 0.365418 
+Epoch : 1 Update: 128 maxGradLen : 1.000000 0.346844 0.647360 
+Epoch : 1 Update: 129 maxGradLen : 1.000000 0.398369 0.497314 
+Epoch : 1 Update: 130 maxGradLen : 0.838724 0.132773 0.192015 
+Epoch : 1 Update: 131 maxGradLen : 1.000000 0.328648 0.619731 
+Epoch : 1 Update: 132 maxGradLen : 0.838396 0.145636 0.257167 
+Epoch : 1 Update: 133 maxGradLen : 1.000000 0.198008 0.347157 
+Epoch : 1 Update: 134 maxGradLen : 1.000000 0.185893 0.411045 
+Epoch : 1 Update: 135 maxGradLen : 1.000000 0.229258 0.376429 
+Epoch : 1 Update: 136 maxGradLen : 0.870247 0.147415 0.248578 
+Epoch : 1 Update: 137 maxGradLen : 0.962616 0.170711 0.273089 
+Epoch : 1 Update: 138 maxGradLen : 1.000000 0.183714 0.307572 
+Epoch : 1 Update: 139 maxGradLen : 1.000000 0.387906 0.513823 
+Epoch : 1 Update: 140 maxGradLen : 1.000000 0.248081 0.327500 
+Epoch : 1 Update: 141 maxGradLen : 1.000000 0.540654 0.491859 
+Epoch : 1 Update: 142 maxGradLen : 0.681418 0.140459 0.253563 
+Epoch : 1 Update: 143 maxGradLen : 1.000000 0.245531 0.404783 
+Epoch : 1 Update: 144 maxGradLen : 1.000000 0.369104 0.483281 
+Epoch : 1 Update: 145 maxGradLen : 1.000000 0.214648 0.342381 
+Epoch : 1 Update: 146 maxGradLen : 1.000000 0.318770 0.467449 
+Epoch : 1 Update: 147 maxGradLen : 0.830613 0.223069 0.264533 
+Epoch : 1 Update: 148 maxGradLen : 1.000000 0.211655 0.349108 
+Epoch : 1 Update: 149 maxGradLen : 1.000000 0.255397 0.302818 
+Epoch : 1 Update: 150 maxGradLen : 0.943038 0.140122 0.200970 
+Epoch : 1 Update: 151 maxGradLen : 0.900873 0.170928 0.211679 
+Epoch : 1 Update: 152 maxGradLen : 0.779520 0.165429 0.272077 
+Epoch : 1 Update: 153 maxGradLen : 1.000000 0.296090 0.409949 
+Epoch : 1 Update: 154 maxGradLen : 1.000000 0.683383 1.000000 
+Epoch : 1 Update: 155 maxGradLen : 0.919735 0.168027 0.354292 
+Epoch : 1 Update: 156 maxGradLen : 0.638683 0.124470 0.128380 
+Epoch : 1 Update: 157 maxGradLen : 1.000000 0.269034 0.333004 
+Epoch : 1 Update: 158 maxGradLen : 1.000000 0.183845 0.312711 
+Epoch : 1 Update: 159 maxGradLen : 1.000000 0.421834 0.425848 
+Epoch : 1 Update: 160 maxGradLen : 1.000000 0.345952 0.545277 
+Epoch : 1 Update: 161 maxGradLen : 1.000000 0.167769 0.270994 
+Epoch : 1 Update: 162 maxGradLen : 1.000000 0.189337 0.332541 
+Epoch : 1 Update: 163 maxGradLen : 1.000000 0.319657 0.367623 
+Epoch : 1 Update: 164 maxGradLen : 0.942296 0.177274 0.258885 
+Epoch : 1 Update: 165 maxGradLen : 1.000000 0.265801 0.318887 
+Epoch : 1 Update: 166 maxGradLen : 1.000000 0.254884 0.390036 
+Epoch : 1 Update: 167 maxGradLen : 1.000000 0.283734 0.455688 
+Epoch : 1 Update: 168 maxGradLen : 1.000000 0.506751 0.599028 
+Epoch : 1 Update: 169 maxGradLen : 1.000000 0.205895 0.286188 
+Epoch : 1 Update: 170 maxGradLen : 0.947732 0.161795 0.194988 
+Epoch : 1 Update: 171 maxGradLen : 1.000000 0.319796 0.472541 
+Epoch : 1 Update: 172 maxGradLen : 1.000000 0.408336 0.433351 
+Epoch : 1 Update: 173 maxGradLen : 1.000000 0.333764 0.430917 
+Epoch : 1 Update: 174 maxGradLen : 1.000000 0.218885 0.282835 
+Epoch : 1 Update: 175 maxGradLen : 1.000000 0.211951 0.279725 
+Epoch : 1 Update: 176 maxGradLen : 1.000000 0.275957 0.337187 
+Epoch : 1 Update: 177 maxGradLen : 0.838050 0.168271 0.210966 
+Epoch : 1 Update: 178 maxGradLen : 1.000000 0.206131 0.254585 
+Epoch : 1 Update: 179 maxGradLen : 0.846572 0.179416 0.194897 
+Epoch : 1 Update: 180 maxGradLen : 1.000000 0.278288 0.290269 
+Epoch : 1 Update: 181 maxGradLen : 1.000000 0.326911 0.349378 
+Epoch : 1 Update: 182 maxGradLen : 1.000000 0.370218 0.399372 
+Epoch : 1 Update: 183 maxGradLen : 1.000000 0.322273 0.378080 
+Epoch : 1 Update: 184 maxGradLen : 1.000000 0.214817 0.326251 
+Epoch : 1 Update: 185 maxGradLen : 1.000000 0.288433 0.326715 
+Epoch : 1 Update: 186 maxGradLen : 1.000000 0.260760 0.450653 
+Epoch : 1 Update: 187 maxGradLen : 1.000000 0.240742 0.326905 
+Epoch : 1 Update: 188 maxGradLen : 1.000000 0.280819 0.335746 
+Epoch : 1 Update: 189 maxGradLen : 1.000000 0.261214 0.450492 
+Epoch : 1 Update: 190 maxGradLen : 0.984536 0.205371 0.277759 
+Epoch : 1 Update: 191 maxGradLen : 1.000000 0.423339 0.416543 
+Epoch : 1 Update: 192 maxGradLen : 1.000000 0.426497 0.642729 
+Epoch : 1 Update: 193 maxGradLen : 0.990893 0.187819 0.216546 
+Epoch : 1 Update: 194 maxGradLen : 1.000000 0.272184 0.495221 
+Epoch : 1 Update: 195 maxGradLen : 0.683767 0.125257 0.239356 
+Epoch : 1 Update: 196 maxGradLen : 1.000000 0.246162 0.349546 
+Epoch : 1 Update: 197 maxGradLen : 1.000000 0.407020 0.526070 
+Epoch : 1 Update: 198 maxGradLen : 1.000000 0.309785 0.431856 
+Epoch : 1 Update: 199 maxGradLen : 1.000000 0.378127 0.392273 
+Epoch : 1 Update: 200 maxGradLen : 1.000000 0.211318 0.323474 
+Epoch : 1 Update: 201 maxGradLen : 1.000000 0.427384 0.597986 
+Epoch : 1 Update: 202 maxGradLen : 0.936260 0.209753 0.376645 
+Epoch : 1 Update: 203 maxGradLen : 1.000000 0.411175 0.625025 
+Epoch : 1 Update: 204 maxGradLen : 1.000000 0.397649 0.479140 
+Epoch : 1 Update: 205 maxGradLen : 1.000000 0.225113 0.278605 
+Epoch : 1 Update: 206 maxGradLen : 0.909824 0.216582 0.323218 
+Epoch : 1 Update: 207 maxGradLen : 1.000000 0.304842 0.528665 
+Epoch : 1 Update: 208 maxGradLen : 1.000000 0.257192 0.486841 
+Epoch : 1 Update: 209 maxGradLen : 0.924851 0.187712 0.257554 
+Epoch : 1 Update: 210 maxGradLen : 1.000000 0.356400 0.465315 
+Epoch : 1 Update: 211 maxGradLen : 1.000000 0.358551 0.399930 
+Epoch : 1 Update: 212 maxGradLen : 1.000000 0.216889 0.296659 
+Epoch : 1 Update: 213 maxGradLen : 1.000000 0.518043 0.557654 
+Epoch : 1 Update: 214 maxGradLen : 1.000000 0.230159 0.489354 
+Epoch : 1 Update: 215 maxGradLen : 1.000000 0.283765 0.272384 
+Epoch : 1 Update: 216 maxGradLen : 0.713065 0.170769 0.237623 
+Epoch : 1 Update: 217 maxGradLen : 1.000000 0.380866 0.515783 
+Epoch : 1 Update: 218 maxGradLen : 1.000000 0.249036 0.339058 
+Epoch : 1 Update: 219 maxGradLen : 1.000000 0.241137 0.296596 
+Epoch : 1 Update: 220 maxGradLen : 1.000000 0.228338 0.329217 
+Epoch : 1 Update: 221 maxGradLen : 1.000000 0.243135 0.408507 
+Epoch : 1 Update: 222 maxGradLen : 1.000000 0.464040 0.874170 
+Epoch : 1 Update: 223 maxGradLen : 0.808403 0.134238 0.246081 
+Epoch : 1 Update: 224 maxGradLen : 1.000000 0.245434 0.316601 
+Epoch : 1 Update: 225 maxGradLen : 1.000000 0.227015 0.291587 
+Epoch : 1 Update: 226 maxGradLen : 1.000000 0.179073 0.258270 
+Epoch : 1 Update: 227 maxGradLen : 1.000000 0.516783 0.392607 
+Epoch : 1 Update: 228 maxGradLen : 1.000000 0.240707 0.332427 
+Epoch : 1 Update: 229 maxGradLen : 1.000000 0.213178 0.283608 
+Epoch : 1 Update: 230 maxGradLen : 1.000000 0.220733 0.364642 
+Epoch : 1 Update: 231 maxGradLen : 1.000000 0.200003 0.242567 
+Epoch : 1 Update: 232 maxGradLen : 1.000000 0.313120 0.474996 
+Epoch : 1 Update: 233 maxGradLen : 0.886401 0.190590 0.280187 
+Epoch : 1 Update: 234 maxGradLen : 1.000000 0.228046 0.335166 
+Epoch : 1 Update: 235 maxGradLen : 1.000000 0.523189 0.629236 
+Epoch : 1 Update: 236 maxGradLen : 1.000000 0.347597 0.358982 
+Epoch : 1 Update: 237 maxGradLen : 1.000000 0.224708 0.368492 
+Epoch : 1 Update: 238 maxGradLen : 1.000000 0.330531 0.419478 
+Epoch : 1 Update: 239 maxGradLen : 1.000000 0.222007 0.332749 
+Epoch : 1 Update: 240 maxGradLen : 1.000000 0.294175 0.278187 
+Epoch : 1 Update: 241 maxGradLen : 1.000000 0.223070 0.441847 
+Epoch : 1 Update: 242 maxGradLen : 1.000000 0.366966 0.727006 
+Epoch : 1 Update: 243 maxGradLen : 1.000000 0.230956 0.273592 
+Epoch : 1 Update: 244 maxGradLen : 1.000000 0.405230 0.472507 
+Epoch : 1 Update: 245 maxGradLen : 1.000000 0.245884 0.292964 
+Epoch : 1 Update: 246 maxGradLen : 1.000000 0.258396 0.278056 
+Epoch : 1 Update: 247 maxGradLen : 0.945291 0.194987 0.210543 
+Epoch : 1 Update: 248 maxGradLen : 1.000000 0.614395 0.632753 
+Epoch : 1 Update: 249 maxGradLen : 1.000000 0.467281 0.390794 
+Epoch : 1 Update: 250 maxGradLen : 0.728157 0.138734 0.229481 
+Epoch : 1 Update: 251 maxGradLen : 0.970249 0.194052 0.330737 
+Epoch : 1 Update: 252 maxGradLen : 1.000000 0.326143 0.497941 
+Epoch : 1 Update: 253 maxGradLen : 1.000000 0.358609 0.490675 
+Epoch : 1 Update: 254 maxGradLen : 1.000000 0.444162 0.525011 
+Epoch : 1 Update: 255 maxGradLen : 1.000000 0.349148 0.460338 
+Epoch : 1 Update: 256 maxGradLen : 1.000000 0.416409 0.472677 
+Epoch : 1 Update: 257 maxGradLen : 1.000000 0.348206 0.452844 
+Epoch : 1 Update: 258 maxGradLen : 0.654361 0.141548 0.204949 
+Epoch : 1 Update: 259 maxGradLen : 1.000000 0.382947 0.422528 
+Epoch : 1 Update: 260 maxGradLen : 1.000000 0.522315 0.648559 
+Epoch : 1 Update: 261 maxGradLen : 1.000000 0.191115 0.219947 
+Epoch : 1 Update: 262 maxGradLen : 1.000000 0.248166 0.263700 
+Epoch : 1 Update: 263 maxGradLen : 0.949742 0.182292 0.315149 
+Epoch : 1 Update: 264 maxGradLen : 0.952902 0.200882 0.287390 
+Epoch : 1 Update: 265 maxGradLen : 1.000000 0.401850 0.528256 
+Epoch : 1 Update: 266 maxGradLen : 1.000000 0.194765 0.270200 
+Epoch : 1 Update: 267 maxGradLen : 1.000000 0.288065 0.407262 
+Epoch : 1 Update: 268 maxGradLen : 1.000000 0.382819 0.400617 
+Epoch : 1 Update: 269 maxGradLen : 1.000000 0.272845 0.629154 
+Epoch : 1 Update: 270 maxGradLen : 1.000000 0.250133 0.360174 
+Epoch : 1 Update: 271 maxGradLen : 1.000000 0.301444 0.404392 

@@ -1,0 +1,140 @@
+function [] = txtfe_hts_v7(htslabpath,featspath,uniqphnslist,vowlist,poslist,durfeatsinpath,durfeatsoutpath)
+
+% Purpose : numerical feature mapping from context dependent label file of HTS
+
+% Inputs : (1) htslabpath - Path where HTS Full context label files are present
+%          (2) featspath - Output numerical feats will be written in this directory
+%          (3) uniqphnslist - unique phones list
+%          (4) vowlist - vowels list
+%          (5) poslist - parts-of-speech tags list
+
+% Ouputs : (1) featspath - Output numerical feats will be written in this directory
+
+% **** v5 + duration feature extraction ****
+
+mkdir(featspath);
+mkdir(durfeatsinpath);
+mkdir(durfeatsoutpath);
+
+files = dir(htslabpath);
+
+
+fid = fopen(uniqphnslist,'r');
+phnset = textscan(fid,'%s');
+phns = phnset{1};
+fclose(fid);
+
+fid = fopen(vowlist,'r');
+vowset = textscan(fid,'%s');
+vows = vowset{1};
+fclose(fid);
+
+fid = fopen(poslist,'r');
+posset = textscan(fid,'%s');
+pos = posset{1};
+fclose(fid);
+
+% tristate information
+s = [0 0 1; 0 1 0; 1 0 0 ];
+
+
+for fno = 3:length(files)
+    files(fno).name
+    X = [];
+    Xd = [];
+    durfeats = [];
+    dur = [];
+    nofcphn = [];
+    
+    [fname,tok] = strtok(files(fno).name,'.');
+    
+    if strcmp(tok,'.lab')
+        % read the context label file
+        fid = fopen(strcat(htslabpath,files(fno).name),'r');
+        cnt = 1;
+        
+        while feof(fid) ~=1
+            lin = fgetl(fid);
+            selected_outputs = regexp(lin(1:21),' ','split');
+            [st,et] = selected_outputs{~strcmp(selected_outputs,'')};
+            st = str2double(st);et = str2double(et);
+            st = st/10^7; et = et/10^7;
+            
+            nofcphn(cnt) = round((et - st)/0.005);
+            
+            % tristate information
+            nofps = floor(nofcphn(cnt)/3);
+            efms = mod(nofcphn(cnt),3);
+            s1 = [repmat(s(1,:),nofps,1) (0:nofps-1)'];
+            s2 = [repmat(s(2,:),nofps+efms,1) (0:nofps+efms-1)'];
+            s3 = [repmat(s(3,:),nofps,1) (0:nofps-1)'];
+            si = [s1;s2;s3];
+            
+            %             durfeats = [durfeats; si (nofcphn(cnt)-1:-1:0)'*(1/(nofcphn(cnt))) (nofcphn(cnt)-1:-1:0)' ...
+            %                 (0:nofcphn(cnt)-1)' repmat((et-st),nofcphn(cnt),1)];
+            dur(cnt) = et - st;
+            cnt = cnt + 1;
+            
+        end
+        
+        fclose(fid);
+        
+        fid = fopen(strcat(htslabpath,files(fno).name),'r');
+        cnt = 1;
+        while feof(fid) ~=1
+            
+            lin = fgetl(fid);
+            str = lin(23:end);
+            [Cfeatsnb,Cfeatsb,Nfeats] = parse_htscdlabelstr(str);
+            
+            % conver nobinary categorical feats to binary categorical fets (ignore parts of speech and tobi)
+            bf = [];
+            for i = 1:5
+                zstr = zeros(1,length(phns)); % a string of zeros
+                
+                if strcmp(Cfeatsnb{i},'x') ~=1
+                    ix = strcmp(Cfeatsnb{i},phns);
+                    zstr(ix) = 1;
+                end
+                bf = [bf zstr];
+                
+            end
+            
+            zstr = zeros(1,length(vows));
+            if strcmp(Cfeatsnb{6},'x') ~=1
+                ix = strcmp(Cfeatsnb{6},vows);
+                zstr(ix) = 1;
+            end
+            bf = [bf zstr];
+            
+            % parts of speech tagging
+            for i = 7:9
+                zstr = zeros(1,length(pos));
+                
+                ix = strcmp(Cfeatsnb{i},pos);
+                zstr(ix) = 1;
+                
+                bf = [bf zstr];
+            end
+            
+            sf = [bf Cfeatsb Nfeats];
+            %             rf = repmat(sf,nofcphn(cnt),1);
+            %             X = [X;rf];
+            Xd = [Xd;sf];
+            cnt = cnt + 1;
+            
+            
+        end
+        
+        fclose(fid);
+        %         X = [X durfeats];
+        
+        dlmwrite(strcat(durfeatsinpath,fname,'.feats'),Xd,'delimiter',' ');
+        dlmwrite(strcat(durfeatsoutpath,fname,'.txt'),dur(:),'delimiter',' ');
+        
+        %         dlmwrite(strcat(featspath,fname,'.feats'),X,'delimiter',' ');
+        
+    end
+    
+end
+
