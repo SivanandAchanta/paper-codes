@@ -1,0 +1,71 @@
+% Make directories to write parameter files , error per epoch
+datadir = '../matfiles_12_39D/';
+wtdir = ('../wt/');
+errdir =  ('../err/');
+
+% NN params settings
+numepochs = 10;
+gpu_flag = 0 % Set the flag to 0 to run on CPU
+sgd_type = 'sgdcm' % (adam/adadelta/sgdcm)
+arch_name1 = '700R500R200R100R' % Architecture
+ol_type = 'M' % Ouput Layer Type ( Usually 'L' (Linear) for Regression Problems and 'M' (Softmax) for Classification Problems)
+cfn = 'nll' % cost function 'nll' for calssification and 'ls' for regression
+wtinit_meth = 'rg'
+check_valfreq = 1000 % check validtion error for every "check_valfreq" minibats
+model_name = 'dnnwa_v2'
+gradCheckFlag = 0;
+
+% Weight initialization hyperparameters
+switch wtinit_meth
+    case 'rg'
+        si = 0.2;
+        sba1 = 0.1;
+        sba2 = 0.1;        
+        sa = 0.2;
+        sh = 0.1;
+        so = 0.1;
+end
+
+
+% Step 1 : Read data
+% Set the input output dimensions and the normalization flags
+outvec = [1:12];
+invec = [1:39];
+mvnivec = [1:39];
+intmvnf = 1;
+outtmvnf = 0;
+
+files = dir(strcat(datadir,'train.mat'));
+nb = length(files);
+clear files
+
+% make directories to write parameter files , error per epoch and average lengths of gradients
+mkdir(wtdir);
+mkdir(errdir);
+
+files = dir(strcat(wtdir,'W_*'));
+nwt = length(files);
+clear files
+nwt
+
+
+% Step 3 : Train according to SGD Type (adam/adadelta/sgdcm)
+% l1 and l2 regularization penalty coefficent settings
+l1_vec = [0];
+l2_vec = [0.0000];
+
+switch sgd_type
+    case 'sgdcm'
+        lr_vec = [0.001];
+        mf_vec = [0.9];
+    case 'adadelta'
+        rho_vec = [0.98 0.95];
+        eps_vec = [1e-6 1e-4];
+        mf_vec = [0];
+    case 'adam'
+        alpha_vec = [1e-4];
+        beta1_vec = [0.9];
+        beta2_vec = [0.999];
+        eps_hp = 1e-3;
+        lam = 1 - eps_hp;
+end
