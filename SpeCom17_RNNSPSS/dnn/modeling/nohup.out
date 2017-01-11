@@ -1,0 +1,178 @@
+Warning: No window system found.  Java option 'MWT' ignored
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> >> 
+in_nml_meth =
+
+mvni
+
+
+out_nml_meth =
+
+mvno
+
+{Warning: Directory already exists.} 
+{> In config at 114} 
+{Warning: Directory already exists.} 
+{> In config at 115} 
+>> >> >> >> 
+i =
+
+     1
+
+
+i =
+
+     2
+
+
+i =
+
+     3
+
+
+i =
+
+     4
+
+
+i =
+
+     5
+
+
+i =
+
+     6
+
+      806944
+
+      806944
+
+Normalizing input feats using mean variance normalization ...
+Normalizing output feats using mean variance normalization ...
+Size of the training dataset 2873679 
+
+ans =
+
+       22159
+
+
+ans =
+
+       22159
+
+
+ans =
+
+       19953
+
+
+ans =
+
+       19953
+
+size of train i/o data
+
+Nin =
+
+     2873679
+
+
+din =
+
+   347
+
+
+Nout =
+
+     2873679
+
+
+dout =
+
+   150
+
+Number of Train, Validation and Test Batches ...
+
+train_numbats =
+
+        2355
+
+
+val_numbats =
+
+    62
+
+
+test_numbats =
+
+    62
+
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> training with ADA-DELTA optimizer ...
+size of weight matrix
+
+ans =
+
+           1      748500
+
+
+arch_name =
+
+347L500R500R500R150L_l25e-05_rho0.98_eps1e-08_mf0_yi_gv0_lambda0.005_mvni_mvno_145
+
+training on CPU ... 
+Elapsed time is 667.832177 seconds.
+Elapsed time is 392.711264 seconds.
+Elapsed time is 24.875964 seconds.
+Elapsed time is 23.285045 seconds.
+Elapsed time is 1308.492520 seconds.
+Elapsed time is 145.003950 seconds.
+Elapsed time is 837.846183 seconds.
+Elapsed time is 61.658484 seconds.
+Elapsed time is 40.272950 seconds.
+Elapsed time is 81.382993 seconds.
+Elapsed time is 589.806380 seconds.
+Elapsed time is 69.664328 seconds.
+Elapsed time is 5.355926 seconds.
+Elapsed time is 516.158989 seconds.
+Elapsed time is 412.828381 seconds.
+Elapsed time is 753.077924 seconds.
+Elapsed time is 98.103779 seconds.
+Elapsed time is 7.139646 seconds.
+Elapsed time is 107.453944 seconds.
+Elapsed time is 97.607965 seconds.
+Elapsed time is 125.200472 seconds.
+Elapsed time is 18.735789 seconds.
+Elapsed time is 336.276780 seconds.
+Elapsed time is 412.907044 seconds.
+Elapsed time is 104.736035 seconds.
+Elapsed time is 3.222812 seconds.
+Elapsed time is 569.532349 seconds.
+Elapsed time is 488.610181 seconds.
+Elapsed time is 739.812855 seconds.
+Elapsed time is 90.700533 seconds.
+Elapsed time is 254.869892 seconds.
+Elapsed time is 14.101519 seconds.
+Elapsed time is 16.728792 seconds.
+Elapsed time is 767.588548 seconds.
+Elapsed time is 235.975710 seconds.
+Elapsed time is 453.821001 seconds.
+Elapsed time is 7.974858 seconds.
+Elapsed time is 10.231842 seconds.
+Elapsed time is 856.981826 seconds.
+Elapsed time is 230.716394 seconds.
+Elapsed time is 9.136324 seconds.
+Elapsed time is 164.350846 seconds.
+Elapsed time is 233.363866 seconds.
+Elapsed time is 375.028343 seconds.
+Elapsed time is 3.767572 seconds.
+Elapsed time is 449.452048 seconds.
