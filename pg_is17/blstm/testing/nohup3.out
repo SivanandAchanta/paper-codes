@@ -1,0 +1,610 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> >> >> >> >> 
+numepochs =
+
+    20
+
+
+gpu_flag =
+
+     0
+
+
+sgd_type =
+
+adam
+
+
+arch_name1 =
+
+500N
+
+
+ol_type =
+
+L
+
+
+cfn =
+
+ls
+
+
+wtinit_meth =
+
+gi
+
+
+check_valfreq =
+
+        2000
+
+
+model_name =
+
+blstm
+
+
+gradCheckFlag =
+
+     0
+
+
+train_test_ratio =
+
+    10
+
+
+gcth_vec =
+
+     1
+
+
+l1_vec =
+
+     0
+
+
+l2_vec =
+
+     0
+
+
+feat_name =
+
+cmp
+
+
+in_nml_meth =
+
+mvni
+
+
+out_nml_meth =
+
+mvno
+
+[Warning: Directory already exists.] 
+[> In config_IndicTTS (line 76)] 
+[Warning: Directory already exists.] 
+[> In config_IndicTTS (line 86)] 
+>> >> >> >> >> >> >> >> >> >> >> >> 
+arch_name1 =
+
+534L500N235L
+
+>> >> >> >> >> >> >> >> >> >> >> 
+li =
+
+     1
+
+
+li =
+
+     2
+
+
+li =
+
+     3
+
+
+li =
+
+     4
+
+
+li =
+
+     5
+
+
+li =
+
+     6
+
+
+li =
+
+     7
+
+
+li =
+
+     8
+
+
+li =
+
+     9
+
+
+li =
+
+    10
+
+
+li =
+
+    11
+
+
+li =
+
+    12
+
+
+li =
+
+    13
+
+
+li =
+
+    14
+
+
+li =
+
+    15
+
+
+li =
+
+    16
+
+
+li =
+
+    17
+
+
+li =
+
+    18
+
+
+li =
+
+    19
+
+
+li =
+
+    20
+
+
+li =
+
+     1
+
+
+li =
+
+     2
+
+
+li =
+
+     3
+
+
+li =
+
+     4
+
+
+li =
+
+     5
+
+
+li =
+
+     6
+
+
+li =
+
+     7
+
+
+li =
+
+     8
+
+
+li =
+
+     9
+
+
+li =
+
+    10
+
+
+li =
+
+    11
+
+
+li =
+
+    12
+
+
+li =
+
+    13
+
+
+li =
+
+    14
+
+
+li =
+
+    15
+
+
+li =
+
+    16
+
+
+li =
+
+    17
+
+
+li =
+
+    18
+
+
+li =
+
+    19
+
+
+li =
+
+    20
+
+
+li =
+
+     1
+
+
+li =
+
+     2
+
+
+li =
+
+     3
+
+
+li =
+
+     4
+
+
+li =
+
+     5
+
+
+li =
+
+     6
+
+
+li =
+
+     7
+
+
+li =
+
+     8
+
+
+li =
+
+     9
+
+
+li =
+
+    10
+
+
+li =
+
+    11
+
+
+li =
+
+    12
+
+
+li =
+
+    13
+
+
+li =
+
+    14
+
+
+li =
+
+    15
+
+
+li =
+
+    16
+
+
+li =
+
+    17
+
+
+li =
+
+    18
+
+
+li =
+
+    19
+
+
+li =
+
+    20
+
+
+li =
+
+     1
+
+
+li =
+
+     2
+
+
+li =
+
+     3
+
+
+li =
+
+     4
+
+
+li =
+
+     5
+
+
+li =
+
+     6
+
+
+li =
+
+     7
+
+
+li =
+
+     8
+
+
+li =
+
+     9
+
+
+li =
+
+    10
+
+
+li =
+
+    11
+
+
+li =
+
+    12
+
+
+li =
+
+    13
+
+
+li =
+
+    14
+
+
+li =
+
+    15
+
+
+li =
+
+    16
+
+
+li =
+
+    17
+
+
+li =
+
+    18
+
+
+li =
+
+    19
+
+
+li =
+
+    20
+
+
+li =
+
+     1
+
+
+li =
+
+     2
+
+
+li =
+
+     3
+
+
+li =
+
+     4
+
+
+li =
+
+     5
+
+
+li =
+
+     6
+
+
+li =
+
+     7
+
+
+li =
+
+     8
+
+
+li =
+
+     9
+
+
+li =
+
+    10
+
+
+li =
+
+    11
+
+
+li =
+
+    12
+
+
+li =
+
+    13
+
+
+li =
+
+    14
+
+
+li =
+
+    15
+
+
+li =
+
+    16
+
+
+li =
+
+    17
+
+
+li =
+
+    18
+
+
+li =
+
+    19
+
+
+li =
+
+    20
+
+>> >> 
+total_err =
+
+    0.8778
+
+>> >> >> >> >> 
