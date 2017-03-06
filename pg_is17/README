@@ -1,0 +1,10 @@
+This folder contains codes for INTERSPEECH 2017 submission titled "Polyglot Synthesis via Zero-Shot Learning in Recurrent Neural Network based Text-to-Speech Synthesis of Indian Languages"
+
+data_prep/ - Folder contains codes to add speaker, language and gender codes to the input features
+
+blstm/ - Contains training/ and testing/ sub-folders
+
+blstm/training - Training a single layer BLSTM for multi-lingual acoustic modeling (AM)
+
+blstm/testing - Testing the trained multi-lingual AM for multi-lingual synthesis as well as polyglot synthesis
+
