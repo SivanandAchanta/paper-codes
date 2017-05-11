@@ -1,0 +1,6 @@
+Average time taken to synthesize 5 files by W_347L250N235L_gru_gi_alpha0.0003_beta10.9_beta20.999_si0.01_ri0.01_so0.01_fbinit0_gi_115 arch is : 0.085161 
+Average time taken to synthesize 5 files by W_347L500N235L_gru_gi_alpha0.0003_beta10.9_beta20.999_si0.01_ri0.01_so0.01_fbinit0_gi_209 arch is : 0.303408 
+Average time taken to synthesize 5 files by W_277L250N235L_gru_gi_alpha0.0003_beta10.9_beta20.999_si0.01_ri0.01_so0.01_fbinit0_gi_41 arch is : 0.132179 
+Average time taken to synthesize 5 files by W_277L500N235L_gru_gi_alpha0.0003_beta10.9_beta20.999_si0.01_ri0.01_so0.01_fbinit0_gi_60 arch is : 0.730432 
+Average time taken to synthesize 5 files by W_364L250N235L_gru_gi_alpha0.0003_beta10.9_beta20.999_si0.01_ri0.01_so0.01_fbinit0_gi_15 arch is : 0.113776 
+Average time taken to synthesize 5 files by W_364L500N235L_gru_gi_alpha0.0003_beta10.9_beta20.999_si0.01_ri0.01_so0.01_fbinit0_gi_19 arch is : 0.529494 

@@ -1,0 +1,32 @@
+function [train_batchdata,train_batchtargets,train_clv] = get_traindata(datadir,bn,m,v,mo,vo,mvnivec,dout)
+
+fprintf('Loading batch %d ... \n',bn);
+load(strcat(datadir,'train',num2str(bn),'.mat'));
+    
+% Step1: make training data
+train_batchdata = single(data);
+train_batchtargets = single(targets);    
+clv = clv(:)';
+train_clv = clv;
+train_clv = cumsum([1 train_clv]);
+train_numbats = length(train_clv) - 1;
+
+for i = mvnivec
+    for j = 1:train_numbats
+        I1 = bsxfun(@minus,train_batchdata(train_clv(j):train_clv(j+1)-1,i),m(:,i));
+        I1 = bsxfun(@rdivide,I1,v(:,i)+1e-5);
+        train_batchdata(train_clv(j):train_clv(j+1)-1,i) = I1;
+    end
+end
+
+
+for i = 1:dout
+    for j = 1:train_numbats
+        I1 = bsxfun(@minus,train_batchtargets(train_clv(j):train_clv(j+1)-1,i),mo(:,i));
+        I1 = bsxfun(@rdivide,I1,vo(:,i)+1e-5);
+        train_batchtargets(train_clv(j):train_clv(j+1)-1,i) = I1;
+    end
+end
+
+
+

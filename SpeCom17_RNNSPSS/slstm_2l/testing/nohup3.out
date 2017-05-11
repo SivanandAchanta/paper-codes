@@ -1,0 +1,99 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> >> >> >> >> 
+numepochs =
+
+    20
+
+
+gpu_flag =
+
+     0
+
+
+sgd_type =
+
+adam
+
+
+arch_name1 =
+
+500N500N
+
+
+ol_type =
+
+L
+
+
+cfn =
+
+ls
+
+
+wtinit_meth =
+
+di
+
+
+check_valfreq =
+
+        1000
+
+
+model_name =
+
+slstm_2l
+
+[Warning: Directory already exists.] 
+[> In config_basic (line 53)] 
+[Warning: Directory already exists.] 
+[> In config_basic (line 55)] 
+[Warning: Directory already exists.] 
+[> In config_basic (line 57)] 
+
+in_nml_meth =
+
+mvni
+
+
+out_nml_meth =
+
+mvno
+
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> Processing file 1 of 20 ... 
+Processing file 2 of 20 ... 
+Processing file 3 of 20 ... 
+Processing file 4 of 20 ... 
+Processing file 5 of 20 ... 
+Processing file 6 of 20 ... 
+Processing file 7 of 20 ... 
+Processing file 8 of 20 ... 
+Processing file 9 of 20 ... 
+Processing file 10 of 20 ... 
+Processing file 11 of 20 ... 
+Processing file 12 of 20 ... 
+Processing file 13 of 20 ... 
+Processing file 14 of 20 ... 
+Processing file 15 of 20 ... 
+Processing file 16 of 20 ... 
+Processing file 17 of 20 ... 
+Processing file 18 of 20 ... 
+Processing file 19 of 20 ... 
+Processing file 20 of 20 ... 
+>> >> 
+total_err =
+
+    0.7655
+
+>> >> >> Average time taken to synthesize 20 files by W_364L500N500N235L_slstm_2l_gi_alpha0.0003_beta10.9_beta20.999_si0.01_ri0.01_so0.01_fbinit0_gi_20 arch is : 0.892817 
+>> >> rm: cannot remove 'temp*': No such file or directory
+>> >> 

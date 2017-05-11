@@ -1,0 +1,1 @@
+save(strcat(wtdir,'W_',arch_name,'.mat'),'Wf','Rf','bf','Wz','Rz','bz','U','bu');
