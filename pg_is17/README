@@ -1,4 +1,4 @@
-This folder contains codes for INTERSPEECH 2017 submission titled "Polyglot Synthesis via Zero-Shot Learning in Recurrent Neural Network based Text-to-Speech Synthesis of Indian Languages"
+This folder contains codes for SPL submission titled "Polyglot Synthesis via Zero-Shot Learning in Recurrent Neural Network based Text-to-Speech Synthesis of Indian Languages"
 
 data_prep/ - Folder contains codes to add speaker, language and gender codes to the input features
 
