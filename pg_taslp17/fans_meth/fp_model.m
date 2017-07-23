@@ -2,13 +2,13 @@ switch lid
     case 1
         hm_f_1 = fp_cpu_ll(X,p_f_1_1,f(1));
     case 2
-        hm_f_2 = fp_cpu_ll(X,p_f_1_2,f(1));
+        hm_f_1 = fp_cpu_ll(X,p_f_1_2,f(1));
     case 3
-        hm_f_3 = fp_cpu_ll(X,p_f_1_3,f(1));
+        hm_f_1 = fp_cpu_ll(X,p_f_1_3,f(1));
     case 4
-        hm_f_4 = fp_cpu_ll(X,p_f_1_4,f(1));
+        hm_f_1 = fp_cpu_ll(X,p_f_1_4,f(1));
     case 5
-        hm_f_5 = fp_cpu_ll(X,p_f_1_5,f(1));
+        hm_f_1 = fp_cpu_ll(X,p_f_1_5,f(1));
 end
 
 % 2 - BLSTM Layers

@@ -117,7 +117,7 @@ if do_mvnf
 
     Nin = train_clv(end)-1
     
-    datadir = '../../matfiles_16KHz/';
+    datadir = '../matfiles_16KHz/';
     
     % Input feature normalization
     if intmvnf
@@ -155,7 +155,7 @@ else
     
     nb_vec
     
-    datadir = '../../matfiles_16KHz/';
+    datadir = '../matfiles_16KHz/';
     load(strcat(datadir,'mvni.mat'));
     load(strcat(datadir,'mvno.mat'));
     
