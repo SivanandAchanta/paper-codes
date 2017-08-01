@@ -1,0 +1,1568 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016a (9.0.0.341360) 64-bit (glnxa64)
+                             February 11, 2016
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+	Academic License
+
+>> >> >> >> >> >> >> 
+numepochs =
+
+    20
+
+
+gpu_flag =
+
+     0
+
+
+sgd_type =
+
+adam
+
+
+arch_name1 =
+
+250R250N250N
+
+
+ol_type =
+
+L
+
+
+cfn =
+
+ls
+
+
+wtinit_meth =
+
+gi
+
+
+check_valfreq =
+
+        2000
+
+
+model_name =
+
+fans_meth
+
+
+gradCheckFlag =
+
+     0
+
+
+train_test_ratio =
+
+    10
+
+
+gcth_vec =
+
+     1
+
+
+l1_vec =
+
+     0
+
+
+l2_vec =
+
+     0
+
+
+feat_name =
+
+cmp
+
+
+in_nml_meth =
+
+mvni
+
+
+out_nml_meth =
+
+mvno
+
+[Warning: Directory already exists.] 
+[> In config_IndicTTS (line 78)] 
+[Warning: Directory already exists.] 
+[> In config_IndicTTS (line 89)] 
+>> >> >> >> >> >> >> >> >> >> >> >> 
+arch_name1 =
+
+567L250R250N250N235L
+
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> 
+lanno =
+
+     4
+
+
+li =
+
+     1
+
+
+spix =
+
+     7
+
+
+li =
+
+     2
+
+
+spix =
+
+     7
+
+
+li =
+
+     3
+
+
+spix =
+
+     7
+
+
+li =
+
+     4
+
+
+spix =
+
+     7
+
+
+li =
+
+     5
+
+
+spix =
+
+     7
+
+
+li =
+
+     1
+
+
+spix =
+
+     8
+
+
+li =
+
+     2
+
+
+spix =
+
+     8
+
+
+li =
+
+     3
+
+
+spix =
+
+     8
+
+
+li =
+
+     4
+
+
+spix =
+
+     8
+
+
+li =
+
+     5
+
+
+spix =
+
+     8
+
+
+li =
+
+     1
+
+
+spix =
+
+     7
+
+
+li =
+
+     2
+
+
+spix =
+
+     7
+
+
+li =
+
+     3
+
+
+spix =
+
+     7
+
+
+li =
+
+     4
+
+
+spix =
+
+     7
+
+
+li =
+
+     5
+
+
+spix =
+
+     7
+
+
+li =
+
+     1
+
+
+spix =
+
+     7
+
+
+li =
+
+     2
+
+
+spix =
+
+     7
+
+
+li =
+
+     3
+
+
+spix =
+
+     7
+
+
+li =
+
+     4
+
+
+spix =
+
+     7
+
+
+li =
+
+     5
+
+
+spix =
+
+     7
+
+
+li =
+
+     1
+
+
+spix =
+
+     8
+
+
+li =
+
+     2
+
+
+spix =
+
+     8
+
+
+li =
+
+     3
+
+
+spix =
+
+     8
+
+
+li =
+
+     4
+
+
+spix =
+
+     8
+
+
+li =
+
+     5
+
+
+spix =
+
+     8
+
+
+li =
+
+     1
+
+
+spix =
+
+     7
+
+
+li =
+
+     2
+
+
+spix =
+
+     7
+
+
+li =
+
+     3
+
+
+spix =
+
+     7
+
+
+li =
+
+     4
+
+
+spix =
+
+     7
+
+
+li =
+
+     5
+
+
+spix =
+
+     7
+
+
+li =
+
+     1
+
+
+spix =
+
+     8
+
+
+li =
+
+     2
+
+
+spix =
+
+     8
+
+
+li =
+
+     3
+
+
+spix =
+
+     8
+
+
+li =
+
+     4
+
+
+spix =
+
+     8
+
+
+li =
+
+     5
+
+
+spix =
+
+     8
+
+
+li =
+
+     1
+
+
+spix =
+
+     7
+
+
+li =
+
+     2
+
+
+spix =
+
+     7
+
+
+li =
+
+     3
+
+
+spix =
+
+     7
+
+
+li =
+
+     4
+
+
+spix =
+
+     7
+
+
+li =
+
+     5
+
+
+spix =
+
+     7
+
+
+li =
+
+     1
+
+
+spix =
+
+     8
+
+
+li =
+
+     2
+
+
+spix =
+
+     8
+
+
+li =
+
+     3
+
+
+spix =
+
+     8
+
+
+li =
+
+     4
+
+
+spix =
+
+     8
+
+
+li =
+
+     5
+
+
+spix =
+
+     8
+
+
+lanno =
+
+     5
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+     9
+
+
+li =
+
+     2
+
+
+spix =
+
+     9
+
+
+li =
+
+     3
+
+
+spix =
+
+     9
+
+
+li =
+
+     4
+
+
+spix =
+
+     9
+
+
+li =
+
+     5
+
+
+spix =
+
+     9
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+    10
+
+
+li =
+
+     2
+
+
+spix =
+
+    10
+
+
+li =
+
+     3
+
+
+spix =
+
+    10
+
+
+li =
+
+     4
+
+
+spix =
+
+    10
+
+
+li =
+
+     5
+
+
+spix =
+
+    10
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+     9
+
+
+li =
+
+     2
+
+
+spix =
+
+     9
+
+
+li =
+
+     3
+
+
+spix =
+
+     9
+
+
+li =
+
+     4
+
+
+spix =
+
+     9
+
+
+li =
+
+     5
+
+
+spix =
+
+     9
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+     9
+
+
+li =
+
+     2
+
+
+spix =
+
+     9
+
+
+li =
+
+     3
+
+
+spix =
+
+     9
+
+
+li =
+
+     4
+
+
+spix =
+
+     9
+
+
+li =
+
+     5
+
+
+spix =
+
+     9
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+    10
+
+
+li =
+
+     2
+
+
+spix =
+
+    10
+
+
+li =
+
+     3
+
+
+spix =
+
+    10
+
+
+li =
+
+     4
+
+
+spix =
+
+    10
+
+
+li =
+
+     5
+
+
+spix =
+
+    10
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+     9
+
+
+li =
+
+     2
+
+
+spix =
+
+     9
+
+
+li =
+
+     3
+
+
+spix =
+
+     9
+
+
+li =
+
+     4
+
+
+spix =
+
+     9
+
+
+li =
+
+     5
+
+
+spix =
+
+     9
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+    10
+
+
+li =
+
+     2
+
+
+spix =
+
+    10
+
+
+li =
+
+     3
+
+
+spix =
+
+    10
+
+
+li =
+
+     4
+
+
+spix =
+
+    10
+
+
+li =
+
+     5
+
+
+spix =
+
+    10
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+     9
+
+
+li =
+
+     2
+
+
+spix =
+
+     9
+
+
+li =
+
+     3
+
+
+spix =
+
+     9
+
+
+li =
+
+     4
+
+
+spix =
+
+     9
+
+
+li =
+
+     5
+
+
+spix =
+
+     9
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+    10
+
+
+li =
+
+     2
+
+
+spix =
+
+    10
+
+
+li =
+
+     3
+
+
+spix =
+
+    10
+
+
+li =
+
+     4
+
+
+spix =
+
+    10
+
+
+li =
+
+     5
+
+
+spix =
+
+    10
+
+
+lanno =
+
+     6
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+    11
+
+
+li =
+
+     2
+
+
+spix =
+
+    11
+
+
+li =
+
+     3
+
+
+spix =
+
+    11
+
+
+li =
+
+     4
+
+
+spix =
+
+    11
+
+
+li =
+
+     5
+
+
+spix =
+
+    11
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+    12
+
+
+li =
+
+     2
+
+
+spix =
+
+    12
+
+
+li =
+
+     3
+
+
+spix =
+
+    12
+
+
+li =
+
+     4
+
+
+spix =
+
+    12
+
+
+li =
+
+     5
+
+
+spix =
+
+    12
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+    11
+
+
+li =
+
+     2
+
+
+spix =
+
+    11
+
+
+li =
+
+     3
+
+
+spix =
+
+    11
+
+
+li =
+
+     4
+
+
+spix =
+
+    11
+
+
+li =
+
+     5
+
+
+spix =
+
+    11
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+    11
+
+
+li =
+
+     2
+
+
+spix =
+
+    11
+
+
+li =
+
+     3
+
+
+spix =
+
+    11
+
+
+li =
+
+     4
+
+
+spix =
+
+    11
+
+
+li =
+
+     5
+
+
+spix =
+
+    11
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+    12
+
+
+li =
+
+     2
+
+
+spix =
+
+    12
+
+
+li =
+
+     3
+
+
+spix =
+
+    12
+
+
+li =
+
+     4
+
+
+spix =
+
+    12
+
+
+li =
+
+     5
+
+
+spix =
+
+    12
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+    11
+
+
+li =
+
+     2
+
+
+spix =
+
+    11
+
+
+li =
+
+     3
+
+
+spix =
+
+    11
+
+
+li =
+
+     4
+
+
+spix =
+
+    11
+
+
+li =
+
+     5
+
+
+spix =
+
+    11
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+    12
+
+
+li =
+
+     2
+
+
+spix =
+
+    12
+
+
+li =
+
+     3
+
+
+spix =
+
+    12
+
+
+li =
+
+     4
+
+
+spix =
+
+    12
+
+
+li =
+
+     5
+
+
+spix =
+
+    12
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+    11
+
+
+li =
+
+     2
+
+
+spix =
+
+    11
+
+
+li =
+
+     3
+
+
+spix =
+
+    11
+
+
+li =
+
+     4
+
+
+spix =
+
+    11
+
+
+li =
+
+     5
+
+
+spix =
+
+    11
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+    12
+
+
+li =
+
+     2
+
+
+spix =
+
+    12
+
+
+li =
+
+     3
+
+
+spix =
+
+    12
+
+
+li =
+
+     4
+
+
+spix =
+
+    12
+
+
+li =
+
+     5
+
+
+spix =
+
+    12
+
+
+lanno =
+
+    11
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+    21
+
+
+li =
+
+     2
+
+
+spix =
+
+    21
+
+
+li =
+
+     3
+
+
+spix =
+
+    21
+
+
+li =
+
+     4
+
+
+spix =
+
+    21
+
+
+li =
+
+     5
+
+
+spix =
+
+    21
+
+[Warning: Directory already exists.] 
+
+li =
+
+     1
+
+
+spix =
+
+    22
+
+{Undefined function or variable 'ym'.
+
+Error in compute_error_singlefile_modify_spk_lang_gen (line 66)
+        me = compute_nmlMSE(ym,Y);
+} 
+>> >> 
+total_err =
+
+    4.9709
+
+>> >> >> >> >> 
