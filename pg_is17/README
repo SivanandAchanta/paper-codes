@@ -8,3 +8,11 @@ blstm/training - Training a single layer BLSTM for multi-lingual acoustic modeli
 
 blstm/testing - Testing the trained multi-lingual AM for multi-lingual synthesis as well as polyglot synthesis
 
+fans_meth/ - Contains training/ and testing/ sub-folders
+
+fans_meth/training - Training a single layer BLSTM for multi-lingual acoustic modeling (AM) using fans_meth (Ref [1])
+
+fans_meth/testing - Testing the trained multi-lingual AM for multi-lingual synthesis as well as polyglot synthesis using fans_meth
+
+Ref [1]: Y. Fan, Y. Qian, F. K. Soong, and L. He, “Speaker and language factorization in DNN-based TTS synthesis,” in Proc. ICASSP, 2016, pp. 5540-5544.
+
